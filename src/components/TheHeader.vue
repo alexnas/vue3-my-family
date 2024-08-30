@@ -5,8 +5,8 @@
     <img alt="Vue logo" class="w-20" src="@/assets/logo.png" width="125" height="125" />
 
     <nav class="flex grow items-center justify-center gap-3 text-gray-400">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/preview">Preview</RouterLink>
+      <RouterLink to="/">Форма</RouterLink>
+      <RouterLink to="/preview">Превью</RouterLink>
     </nav>
   </header>
 </template>
