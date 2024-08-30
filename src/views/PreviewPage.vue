@@ -20,11 +20,14 @@ const { person } = storeToRefs(personStore)
       <div>
         <div class="pt-8">
           <h2>Дети</h2>
-          <div v-for="child in person.children" :key="child.id">
-            <div class="mt-3 w-fit rounded-sm bg-gray-200 p-2 font-semibold">
-              {{ child.name }}, {{ child.age }} лет
+          <div v-if="person.children.length > 0">
+            <div v-for="child in person.children" :key="child.id">
+              <div class="mt-3 w-fit rounded-sm bg-gray-200 p-2 font-semibold">
+                {{ child.name }}, {{ child.age }} лет
+              </div>
             </div>
           </div>
+          <div v-else class="mt-3 w-fit rounded-sm bg-gray-200 p-2 font-semibold">Детей нет</div>
         </div>
       </div>
     </div>
